@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DATABASE_TO_UPPER=false
+    username: sa
+    password: password
+    flyway:
+      locations: classpath:db/migration
+      schemas: PUBLIC
+  h2:
+    console:
+      enabled: true
